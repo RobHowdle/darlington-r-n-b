@@ -1,0 +1,153 @@
+
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif+JP:900'); */
+
+body {
+	width:100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+	background-color: #000;
+    background-image: url("../img/Dark-leather.png");
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* archive section */
+.ga {
+    width: 100%;
+    max-height: 95%;
+    margin: 0 auto ;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header {
+    margin: 0;
+    background-color: #000;
+    background: linear-gradient(rgba(0,0,0,1) 50%, rgba(0,0,0,0.75) 65%, rgba(0,0,0,0.50)85%, rgba(0,0,0,0)100%);
+}
+
+header h1 {
+    font-size: 2.5rem;
+ 
+}
+
+.ga h3{
+    font-size: 1.2rem;
+}
+
+.ga p{
+    font-size: 1.0rem;
+}
+
+#ga {
+
+}
+
+.archivelist {
+    padding: 0 10%;
+
+}
+
+.archivelist li {
+    margin-bottom: 2vh;
+    padding: 1vw 2vw;
+    color: #001F59;
+    background-color: rgba(255, 255, 255, 0.45);
+    background-clip:padding-box
+}
+
+
+ /* default mobile view landscape view */
+/*@media 640x360  */
+@media  (min-width: 640px) {
+    header {
+        height: 15vw;
+        margin-bottom: 1vw;
+    }
+
+    header h1 {
+        font-size: 4.5rem;
+    }
+    
+    .ga h3{
+        font-size: 1.8rem;
+    }
+    
+    .ga p{
+        font-size: 1.5rem;
+    }
+
+
+}
+
+/* 740 re align  icons */
+@media  (min-width: 740px) {
+    header {
+        height: 15vw;
+        margin-bottom: 3vw;
+    }
+
+    header h1 {
+        font-size: 5rem;
+        
+    }
+    
+    .ga h3{
+        font-size: 2.5rem;
+    }
+    
+    .ga p{
+        font-size: 2rem;
+    }
+
+}
+
+/* 800 re align  icons */
+@media  (min-width: 800px) {
+
+    header {
+        height: 12vw;
+        margin-bottom: 1vw;
+    }
+
+    header h1 {
+        font-size: 5.5rem;
+    }
+    
+    .ga h3{
+        font-size: 2.5rem;
+    }
+    
+    .ga p{
+        font-size: 2rem;
+    }
+
+}
+
+/* desktop landscape view */
+/*@media 950px  */
+@media  (min-width: 950px) {
+    header {
+        height: 8vw;
+    }
+
+    header h1 {
+        font-size: 6rem;
+        
+    }
+    
+    .ga h3{
+        font-size: 3.5rem;
+    }
+    
+    .ga p{
+        font-size: 2.5rem;
+    }
+
+}

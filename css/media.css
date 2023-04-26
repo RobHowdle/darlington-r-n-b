@@ -1,0 +1,599 @@
+/* style ablum covers */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.card {
+  display: flex;
+  flex-direction: column ;
+  align-content: space-evenly;
+  background-color: transparent;
+  width: 40vw;
+  height: 40vw;
+  margin: 2vw auto;
+  perspective: 500px; /* Remove this if you don't want the 3D effect */
+  -webkit-perspective: 500px;
+}
+  
+.card h3{
+  font-size: 1.2rem;
+  color: aqua;
+}
+
+.card p {
+  font-size: 0.8rem;
+}
+    
+  /* This container is needed to position the front and back side */
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+    
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.card:hover .card-content {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+    
+/* Position the front and back side */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateY(0deg); 
+  -webkit-transform: rotateY(0deg);
+}
+    
+  /* Style the front side (fallback if image is missing) */
+.card-front {
+  display: flex;
+  width: 100%;
+  color: cyan;
+}
+  
+.card-front img {
+  width: 100%;
+}
+    
+  /* Style the back side */
+.card-back {
+  /* background-image: url("../img/record.png") ;   */
+  background-size:cover;
+  color: darkgray;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5vw 0 0.5vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  border: 3px solid #0033cc;
+  border-radius: 5%;
+}
+
+.hidden {
+  display:none;
+}
+
+.audiowarpper {
+
+}
+
+#mplayer {
+
+}
+
+#plytracks {
+  
+
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  z-index: 20;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.viswrapper {
+  display: flex;
+  background-image: url("../img/DTTB1-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-content: center;
+  /* -webkit-animation: colorhue 10s infinite linear; */
+  z-index: 2;
+}
+
+#visualiser {
+  background-image: url("../img/vinyl-blue.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 85%;
+  width: 80%;
+  overflow: visible;
+  z-index: 100;
+}
+
+.vrotate {
+  animation: rotation 10s infinite linear; 
+  -webkit-animation: rotation 10s infinite linear;
+}
+
+#songinfo {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  position: absolute;
+  align-self: center;
+  left: 2.5vw;
+  color: white;
+  width: 68%;
+  z-index: 200;
+}
+  
+#title, #artist, #album {
+  position: relative;
+  text-align: left;
+  margin-left: 25vw;
+  width: 100%;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: -.05em;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#artist, #album  {
+  display: none;
+}
+
+.selection {
+
+}
+
+#selection {
+
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes colorhue{
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+    25%{
+        -webkit-filter: hue-rotate(75deg);
+    }
+    50%{
+        -webkit-filter: hue-rotate(200deg);
+    } 
+    75%{
+        -webkit-filter: hue-rotate(75deg);
+    }
+    to {
+    -webkit-filter: hue-rotate(0deg);
+    }
+}  
+
+/* 
+@-webkit-keyframes colorhue{
+  from {
+      -webkit-filter: hue-rotate(160deg);
+  }
+  25%{
+      -webkit-filter: hue-rotate(210deg);
+  }
+  50%{
+      -webkit-filter: hue-rotate(260deg);
+  } 
+  75%{
+      -webkit-filter: hue-rotate(210deg);
+  }
+  to {
+  -webkit-filter: hue-rotate(210deg);
+  }
+}  */
+
+.audio {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.btns {
+  display: flex;
+  width: 15vw;
+  height: 15vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 1vh;
+}
+
+#nextbtn{
+  background-image: url("../img/next.png");
+}
+
+#playbtn{
+  background-image: url("../img/play.png");
+}
+
+#pausebtn {
+  display: none;
+  background-image: url("../img/pause.png");
+}
+
+#stopbtn{
+  background-image: url("../img/stop.png");
+}
+
+#prevbtn{
+  background-image: url("../img/prev.png");
+}
+
+#vol-up {
+  background-image: url("../img/volume.png");
+  background-size: contain;
+}
+
+#vol-mute {
+  display: none;
+  background-image: url("../img/mute.png");
+}
+
+.bar {
+  display: flex;
+  width: 90%;
+  height: 0.25vh;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  cursor: pointer;
+  /* transform: rotate(90deg); 
+  transform-origin: left; */
+  align-items: center;
+  z-index: 1000;
+}
+
+.fillbar {
+  height: 3px;
+  background-color: blue;
+  border-radius: 10px;
+  /* actual fill is via JS script when track playing, test by adding a width setting */
+}
+
+.handle {
+  width: 1vw;
+  height: 1vh;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 2px;
+  margin: 1vh 0 1vh 0;
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: blue;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  color: blue;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background: blue;
+  border: blue;
+  cursor: pointer; 
+}
+
+#playlist {
+  color: #c0c0c0;
+  padding: 1vh 2vh;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  overflow: auto;
+  scrollbar-width: none; 
+  /* scrollbar for firefox */
+}
+
+#pausebtn {
+  display: none;
+}
+
+.volume {
+  
+}
+
+#vol-off {
+  display: none;
+}
+
+#apvolume {
+  margin: 0vh auto 2vh auto;
+}
+
+#plytraks {
+  text-align: left;
+  padding: 2vh 2vw;
+  color: #c0c0c0;
+  
+}
+
+/* default mobile view landscape view */
+/*@media 640x360  */
+@media  (min-width: 640px) {
+
+  .card {
+    display: flex;
+    margin: 1vh auto;
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
+  }
+
+  .card h3{
+    font-size: 1.0rem;
+    color: aqua;
+  }
+  
+  .card p {
+    font-size: 0.8rem;
+  }
+
+  #mplayer {
+  
+  }
+
+  .player {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55vh;
+    justify-content: space-around;
+    align-content:center;
+    margin: 40vh 0;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12vh;
+    justify-content: center;
+    align-content: space-between;
+    margin: auto 0;
+    z-index: 20;
+  }
+
+  .viswrapper {
+    background-size: contain;
+    background-position: center;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 10vh;
+    /* -webkit-animation: colorhue 10s infinite linear; */
+    z-index: 2;
+  }
+
+  #visualiser {
+    background-size: 85%;
+    width: 80%;
+    overflow: visible;
+    z-index: 100;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 1vw auto;
+    justify-content: center;
+  }
+
+  .btns {
+    display: flex;
+    width: 12vw;
+    height: 12vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 1vh;
+  }
+
+  #title, #artist, #album {
+    position: relative;
+    text-align: left;
+    margin-left: 20vw;
+    
+  }
+
+}
+
+
+/* 760 re aling fas icons */
+@media  (min-width: 800px) {
+
+  .player {
+
+    margin: 15vh 0;
+
+  }
+ 
+ }
+
+
+/* desktop landscape view */
+/*@media 950px  */
+@media  (min-width: 950px) {
+  .card {
+    width: 15vw;
+    max-width: 20vw;
+    height: 15vw;
+    max-height: 20vw;
+  }
+
+  .card h3{
+    font-size: 1.6rem;
+    color: aqua;
+  }
+
+  .card p {
+    font-size: 1.2rem;
+  }
+  
+  .player {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 1vh 0;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .viswrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: flex-start;
+      align-content: center;
+      align-self: center;
+      /* -webkit-animation: colorhue 10s infinite linear; */
+  }
+
+   #visualiser {
+    background-image: url("../img/vinyl-blue.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 85%;
+    overflow: visible;
+    z-index: 100;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: 7vw;
+  }
+
+  .btns {
+    display: flex;
+    width: 5vw;
+    height: 5vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 1vh;
+  }
+
+  #apvolume {
+    margin: 0vh auto 2vh auto;
+  }
+
+  .bar {
+    display: flex;
+    width: 27vw;
+    height: 0.25vh;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 9vw;
+    cursor: pointer;
+    transform: rotate(90deg); 
+    transform-origin: left;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  #title, #artist, #album {
+    position: relative;
+    text-align: left;
+    margin-left: 27vw;
+    font-size: 1.8rem;
+    
+  }
+
+  #playlist {
+    color: #c0c0c0;
+    padding: 2vw;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    /* border: 2px solid blue; */
+    /* overflow: auto; */
+    scrollbar-width: none; 
+    /* scrollbar for firefox */
+    
+  }
+
+  .plytraks {
+    text-align: left;
+    margin: 5vh 1vw 0 1vw;
+    color: #c0c0c0;
+  }
+}
+
+

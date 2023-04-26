@@ -1,0 +1,767 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of reset css */
+
+/* page set css */
+
+/* default mobile portrait view */
+/* @media 360x640 */
+* {
+    font-family: 'Courgette', cursive;
+    box-sizing: border-box;
+    width: 100%;
+    list-style-type: none;
+    --main-Font: 'Courgette', cursive;
+}
+
+/* guitar images */
+header img {
+    display: none
+}
+
+/* Brand image set */
+header img{
+    position: absolute;
+    top:5vh;
+    bottom: 0px;
+    width: 35vw;
+    /* cursor: pointer; */
+    filter: drop-shadow(8px 5px 2px #595959);
+    -webkit-animation: fadein 0.5s ease-in;
+    animation: fadein 0.5s ease-in-out;
+    transition: top 0.50s ease-out;
+    transition: width 0.50s ease-out;
+ } 
+
+#limg{
+    left: 0.1vw;
+    padding-left: 0.5vw;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    z-index: -10;
+}
+
+#rimg{
+    right: 0.1vw;
+    padding-right: 0.5vw;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    z-index: -10;
+        
+}
+    /* guitar images */
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    color: #0033cc;
+    text-shadow: 
+    1px 1px 0 #0066ff,
+    2px 2px 0 #0066ff,
+    3px 3px 0 #0066ff, 
+    4px 4px 0 #0066ff, 
+    5px 5px 0 #000,
+    6px 6px 0 #000,
+    7px 7px 0 #000,
+    8px 8px 2px #99ccff,
+    10px 10px 3px #99ccff,
+    12px 12px 4px #99ccff;
+    margin-left:-1vw;
+    margin-right: -1vw;
+    transition: transform .5s ease;
+}
+
+h2 {
+    line-height: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #6c757d;
+    text-shadow: 
+    1px 1px #000,
+    2px 2px 0 #000,
+    3px 3px 0 #007bff, 
+    4px 4px 1px #007bff,
+    5px 5px 2px #007bff;
+}
+
+h3{
+    font-size: 2.2rem;
+    text-align: center;
+    color: #0033cc;
+}
+
+h4 {
+    font-size: 2rem;
+    text-align: center;
+    color: #6c757d;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: left;
+    color: #C0C0C0;
+}
+
+.intro h2 {
+    text-align: left;
+    padding-bottom: 1vh ;
+}
+
+.more{
+    display: none;
+ }
+
+.read {
+    cursor: pointer;
+    line-height: 3rem;
+    /* text-align: left; */
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "intro"
+    "cal"
+    "contacts"
+    "aplyr"
+    "plist"
+    "cds"
+    "about"
+    "archive"
+    "footer";
+    text-align: center;
+}
+
+.pheader {
+    grid-area: nav;
+    background-color: #000;
+    background: linear-gradient(rgba(0,0,0,1) 50%, rgba(0,0,0,0.75) 65%, rgba(0,0,0,0.50)85%, rgba(0,0,0,0)100%);
+}
+
+
+/* .navitems {
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+} */
+
+.main{
+    grid-area: intro;
+    text-align: justify ;
+    padding: 0 1vw;
+}
+
+.bnr {
+    grid-area: cal;
+    padding: 0 1vw;
+}
+
+#olt {
+    width: 15vw ;
+    margin: 0 3vw;
+    /* border: 2px solid red; */
+}
+
+#fa-ticket {
+    display: inline;
+ 
+}
+
+#olt h2{
+    /* transform: rotate(-15deg); */
+}
+
+a:hover #ticket {
+    
+    color: #007bff;
+    text-shadow:
+        -1px -1px #000,
+        -2px -2px 0 #000,
+        -3px -3px 1px #C0C0C0,
+        -4px -4px 2px #C0C0C0;
+
+}
+
+.cal {
+    grid-area: cal;
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    max-width: 80%;
+    height: 90%;
+    justify-self: flex-end;
+    align-self: center;
+    /* position: relative; */
+    margin: 8vh 0 2vh 0;
+    z-index: 10;
+    overflow: auto;
+    font-size: 1.3rem;
+    color: #001F59;
+    background-color: rgba(255, 255, 255, 0.35);
+    border: 3px solid #0c1e44;
+}
+
+.cal h2{
+    margin-bottom: 2vw;
+    color: #001F59;
+    text-shadow: 
+        1px 1px 0 #000,
+        2px 2px 0 #000,
+        3px 3px 0 #000,
+        4px 4px 0 #1A84C2,
+        5px 5px 0 #1A84C2,
+        6px 6px 0 #1A84C2,
+        7px 7px 0 #1A84C2;
+}
+
+#eventlist { 
+    list-style:none;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    width:100%;
+}
+
+.eventdate { 
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.eventtitle {
+    font-weight:bold;
+}
+
+#eventlist li:nth-child(odd) {
+    color: #001F59;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-clip:padding-box
+}
+
+.contacts {
+    grid-area: contacts;
+    margin-top: 2vh;
+    padding: 1vw; 
+}
+
+.bookings {
+    margin-top: 1vh;
+}
+
+.bookings i {
+    display:inline;
+    margin-left: 25vw;
+}
+
+#gmaplink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    height: 10vh;
+    color: #6c757d;
+    font-size: 1.8rem;
+    /* font-weight: 900; */
+    margin: 2vw;
+    /* border: 2px outset #c0c0c0; */
+    border-radius: 5px;
+    background-color: #007bff;
+   text-shadow: 
+    1px 1px #000,
+    2px 2px 0 #000,
+    3px 3px 1px #000;
+
+}
+
+.gmap {
+    display: none;
+}
+
+.audiowrapper {
+    grid-area: aplyr;
+    padding: 1vw; 
+}
+
+#mplayer {
+    margin-top: 2vh;
+    text-align: justify;
+}
+
+.viswrapper {
+    width: 100%;
+}
+
+.selection {
+    grid-area: plist;
+    display: flex;
+}
+
+.player button{
+    display: none;
+}
+
+.selection button {
+    display: none;
+}
+
+.cds {
+   grid-area: cds;
+   padding: 1vw; 
+}
+
+#cds {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+}
+
+#cd1 {
+    width: 100%;
+}
+
+ #cd2 {
+    width: 100%;
+}
+
+.about {
+    grid-area: about;
+    padding: 1vw;
+}
+
+#about {
+    margin-top: 2vh;
+}
+
+.about .read {
+    text-align: left;
+}
+
+#welcome{
+    font-size: 2.0rem;
+}
+
+#welcome:first-letter {
+    font-size:3.0rem;
+    color: #007bff;
+}
+
+.dropcap span{
+    color: #007bff;
+}
+
+.dropcap:first-letter {
+    font-size: 2.0rem;
+    color: #007bff;
+}
+
+.archive {
+    grid-area: archive;
+    padding: 1vw;
+}
+
+#archive h2 {
+    margin: 1vh 0;
+}
+
+#gadates {
+    columns: 3 auto;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    color: #C0C0C0;
+}
+
+.lfooter {
+    display: flex;
+    padding-right: 1vw;
+}
+
+.cfooter {
+    display: flex;
+    /* border-left: 2px solid #fff; */
+}
+
+.rfooter {
+    display: flex;
+    display: none;
+}
+
+.fas, .fab {
+    font-size: 3rem;
+}
+
+.social-icons {
+    display: flex;
+    
+}
+
+.ga {
+    width: 20vw;
+}
+
+ /* reset into & calendar position and size */
+ @media  (min-width: 400px) {
+    .cal {
+        width: 55%;
+        max-width: 80%;
+        height: 90%;
+        margin: 8vh 2vw 0 0;
+    }
+
+}
+
+/* default mobile view landscape view */
+/*@media 640x360  */
+
+ @media  (min-width: 640px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        grid-auto-rows: auto  ;
+        grid-template-areas: 
+        "nav nav"
+        "intro intro"
+        "cal contacts"
+        "aplyr cds"
+        "plist cds"
+        "about about"
+        "archive archive"
+        "footer footer";
+        text-align: center;
+    }
+
+    #olt {
+        width: 15vw ;
+        margin: 0;
+        /* border: 2px solid red; */
+    }
+
+    #cds {
+         flex-direction: column;
+    }
+
+    .selection {
+        /* margin-top: -10vh; */
+    }
+
+    #contactlink{
+        display: none;
+    }
+
+    #contacts.collapse {
+        display: block;
+    }
+
+    .contacts, .bookings {
+        padding: 0 1vw;
+    }
+
+    .contacts button {
+        display: none;
+    }
+
+    .contacts .more {
+        display: block;
+    }
+    
+    .contacts .read {
+        display: none;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .bookings i {
+        display:inline;
+        margin-left: 2vw;
+    }
+
+    .archive{
+        display: block;
+    }
+
+    footer {
+        padding: 0 1vw;
+    }
+
+ }
+
+/* 760 re aling fas icons */
+@media  (min-width: 760px) {
+
+ .bookings i {
+    display:inline;
+    margin-left: 3vw;
+    }
+
+}
+
+
+ /*@media 950plus wide  */
+
+ @media  (min-width: 950px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 25vw 50vw 25vw;
+        grid-auto-rows: auto ;
+        /* grid-gap: 1vw; */
+        grid-template-areas: 
+        "nav nav nav "
+        "intro cal contacts"
+        "intro2 cal gmap"
+        "aplyr aplyr cds"
+        "plist plist cds"
+        "about about archive"
+        "footer footer footer";
+        text-align: center;
+    }
+
+    /* guitar images */
+    header img {
+        display: flex;
+    }
+
+    @keyframes fadeout {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Brand image set */
+    header img{
+        top:5vh;
+        width: 30vw;
+    }
+
+     /* guitar images */
+
+    /* .navitems {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    } */
+    
+    .cal {
+        grid-area: cal;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin: 0 auto;
+    }
+
+    .main{
+        grid-area: intro;
+        height: fit-content;
+        padding: 2vw;
+        margin: 0 auto;
+    }
+
+    .bnr {
+        grid-area: intro2;
+        padding: 2vw;
+        align-self: flex-end;
+    }
+
+    .bookings {
+        grid-area:contacts;
+        display: block;
+    }
+
+    .bookings i {
+        display:inline;
+        margin-left: 5vw;
+        }
+
+    #gmaplink {
+        display: none;
+
+    }
+
+    .gmap {
+        grid-area: gmap;
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 1vh;
+        padding-bottom: 6vh;
+    }
+
+
+    .about {
+        font-size: 2vh;
+    }
+
+    #about,  #archive  {
+        display: block;
+    }
+
+    .about button {
+        display: none;
+   
+    }
+
+    .archive button {
+        display: none;
+    }
+
+    #archive {
+        height: auto;
+        overflow-y: auto;
+        font-size: 3vw;
+    }
+
+    #gadates {
+        columns: 1 auto;
+    }
+
+    .more {
+        display: block;
+    }
+    
+    .read {
+        display: none;
+    }
+
+    .intro {
+        margin-top: 0.8vh;
+    }
+
+    .rfooter {
+        display: flex;
+        
+    }
+
+ }
+
+  /*@media 1000plus wide  */
+
+  @media  (min-width: 1000px) {
+
+    /* Brand image set */
+    header img{
+        top:4vh;
+        width: 35vw;
+
+    } 
+
+    .intro {
+        margin-top: 3vh;
+    }
+
+    #contacts {
+        margin-top: 3vh;
+    }
+
+
+    /*@media 1050plus wide  */
+
+  @media  (min-width: 1050px) {
+
+
+    /* Brand image set */
+    header img{
+        top:3vh;
+        width: 40vw;
+
+    } 
+
+
+ /*@media 1100plus wide  */
+
+ @media  (min-width: 1100px) {
+
+
+    /* Brand image set */
+    header img{
+        top:2vh;
+        width: 45vw;
+
+    } 
+
+    .intro {
+        margin-top: 3vh;
+    }
+
+    #contacts {
+        margin-top: 3vh;
+    }
+
+
+    /*@media 1300plus wide  */
+
+ @media  (min-width: 1300px) {
+
+
+    /* Brand image set */
+
+    .intro {
+        margin-top: 6vh;
+    }
+
+    #contacts {
+        margin-top: 6vh;
+    }
+
+
+
+}
