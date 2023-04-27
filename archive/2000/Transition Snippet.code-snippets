@@ -1,0 +1,12 @@
+{
+	"Transition Snippet": {
+	  "scope": "css, scss",
+	  "prefix": "@@transition",
+	  "body": [
+		"transition-property: transition_element;",
+        "transition-duration: 300ms;",
+        "transition-timing-function: ease-in-out;"
+	  ]
+	},
+  }
+  

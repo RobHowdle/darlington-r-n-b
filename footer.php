@@ -1,38 +1,63 @@
+<script src="js/sliders.js"></script>
+
 <footer>
-    <article class="lfooter">
-        <p>©Darlington R'n'B Club</p>
-        <div class="social-icons">
-            <a href="mailto:ianross0545@gmail.com"><i class="fas fa-envelope"></i></a> &nbsp;
-            <a href="tel:01325 484946"><i class="fas fa-mobile"></i></a>
-
+    <div class="footer-main">
+        <div class="left-col">
+            <h5>&copy; Darlington R'n'B Club <?php echo date("Y"); ?></h5>
         </div>
-    </article>
+        <div class="center-col">
+            <div class="contact-wrapper">
+                <div class="contact">
+                    <h5>Get In Touch</h5>
+                    <p>Ian Ross - Club Secretary</p>
+                    <div class="contact-links">
+                        <a class="hover-underline" href="tel:07855937357">
+                            <span class="fal fa-phone-alt" aria-hidden="true"></span>
+                            <div>Call Me</div>
+                        </a>
 
-    <article class="cfooter">
-        <div class="social-icons">
-            <!--- social Contacts -->
-            <a href="https://en-gb.facebook.com/darlornbclub" , target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
-            <!-- <a href="tel:01325 363135"><i class="fas fa-mobile"></i></a> -->
-            <a href="https://www.flickr.com/photos/82402292@N00/albums" , target="_blank"><i class="fab fa-flickr"></i></a>
-            <!--- End Contact-->
+                        <a class="hover-underline" href="mailto:ianross0545@gmail.com">
+                            <span class="fal fa-envelope" aria-hidden="true"></span>
+                            <div>Email Me</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </article>
+        <div class="right-col">
+            <h5>Socials</h5>
+            <div class="social-links">
+                <a href="https://en-gb.facebook.com/darlornbclub">
+                    <span class="fab fa-facebook-square" aria-hidden="true"></span>
+                </a>
 
-    <article class="rfooter">
-        <!-- <p>Created by: Keith Howdle </p> -->
-        <div class="social-icons">
-            <p>Updated:<br>
-                <script language="Javascript">
-                    document.write("" + document.lastModified + "");
-                </script>
-            </p>
-
-            <a href="mailto:keith.howdle@gmail.com"><i class="fas fa-envelope"></i></a> &nbsp;
-            <a href="tel:07810647147"><i class="fas fa-mobile"></i></a>
-            <br>
-
+                <a href="https://www.flickr.com/photos/82402292@N00/albums">
+                    <span class="fab fa-flickr" aria-hidden="true"></span>
+                </a>
+            </div>
         </div>
+    </div>
+    <div class="footer-sub">
+        <div class="left-col">
+            <p>Created By Keith Howdle</p>
+            <div class="contact-links">
+                <a class="hover-underline" href="tel:07810647147">
+                    <span class="fal fa-phone-alt" aria-hidden="true"></span>
+                    <div>Call Me</div>
+                </a>
 
-    </article>
+                <a class="hover-underline" href="mailto:keith.howdle@gmail.com">
+                    <span class="fal fa-envelope" aria-hidden="true"></span>
+                    <div>Email Me</div>
+                </a>
+            </div>
+        </div>
+        <div class="right-col">
+        <p>Last Updated - 
+            <script>
+                document.write("" + document.lastModified + "");
+            </script>
+        </p>
+        </div>
+    </div>
 </footer>

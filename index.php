@@ -7,19 +7,25 @@
     <div class="inner-wrapper">
     <?php include('nav.php'); ?>
 
-    <div class="grid-wrapper">
-    <?php include('intro-text.php'); ?>
+        <div class="grid-wrapper">
+            <?php include('main-left-text.php'); ?>
+            <?php include('calendar.php'); ?>
+            <?php include('main-right-text.php'); ?>
+        </div>
 
-    </div>
+        <?php include('about.php'); ?>
+        <?php include('archive.php'); ?>
+
+        <div class="loader-wrapper">
+            <div class="container">
+                <div class="loader"></div>
+            </div>
+        </div>
     </div>
 </div>
 
+<?php include('footer.php'); ?>
 
-<div class="loader-wrapper">
-    <div class="container">
-        <div class="loader"></div>
-    </div>
-</div>
 <script>
 $(window).on('load', function () {
     $(".loader-wrapper").fadeOut("slow");

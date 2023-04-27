@@ -4,8 +4,11 @@
 
 :root {
     --main-bg-color: #000;
+    --blurred-bg-color: rgb(243, 243, 243, 0.5);
     --light-grey: #f3f3f3;
+    --dark-grey: #b3b1b1;
     --dark-blue: #0033cc;
+    --medium-blue: #007bff;
     --light-blue: #1a84c2;
     --white: #fff;
 }
@@ -22,7 +25,7 @@ body {
 }
 
 .main-container {
-    padding-inline: 2rem;
+    padding-inline: 4rem;
 }
 
 .inner-wrapper {
@@ -117,6 +120,11 @@ body {
     font-size: 1.5rem;
 }
 
+.highlight {
+    color: var(--dark-blue);
+    font-size: 1.25rem;
+}
+
 hr.white {
     background-color: var(--light-blue);
     height: 1px;
@@ -128,6 +136,9 @@ hr.white {
     color: var(--white);
     width: fit-content;
     text-decoration: none;
+}
+
+.hover-underline div {
     border-bottom-color: transparent;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -136,10 +147,21 @@ hr.white {
     transition-timing-function: ease-in-out;
 }
 
-.hover-underline:hover {
+.hover-underline span {
     color: var(--white);
+}
+
+.hover-underline:hover {
     text-decoration: none;
+    color: var(--white);
+}
+
+.hover-underline:hover div {
     border-bottom-color: var(--white);
+}
+
+.hover-underline div:hover {
+    color: var(--white);    
 }
 
 .large-link {

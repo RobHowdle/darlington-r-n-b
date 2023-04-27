@@ -711,6 +711,7 @@ footer {
     #contacts {
         margin-top: 3vh;
     }
+}
 
 
     /*@media 1050plus wide  */
@@ -746,12 +747,7 @@ footer {
         margin-top: 3vh;
     }
 
-
-    /*@media 1300plus wide  */
-
  @media  (min-width: 1300px) {
-
-
     /* Brand image set */
 
     .intro {
@@ -761,7 +757,4 @@ footer {
     #contacts {
         margin-top: 6vh;
     }
-
-
-
 }

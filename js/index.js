@@ -4,7 +4,6 @@
     var $div = $(this);
 
     var defaults = $.extend({
-
         calendarId: 'loqtku98c652ie9eggq0c0mse4@group.calendar.google.com',
         apiKey:'AIzaSyApngt3tiz8wOGZU_Qc9xemzzOzWBKaQKQ',
         dateFormat: 'LongDate',

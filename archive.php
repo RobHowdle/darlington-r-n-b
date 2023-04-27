@@ -1,3 +1,46 @@
+<div class="swiper archive-slider">
+    <h4 class="sub-title">Gig Archive</h4>
+    <div class="swiper-wrapper">
+        <?php foreach($dirs as $archiveElement) { ?>
+            <a href="archive/<?php echo $archiveElement; ?>/<?php echo $archiveElement; ?>.php" class="swiper-slide">
+                <?php 
+                    $images = scandir("archive/".$archiveElement);
+                    if ($images !== false) {
+                        foreach($images as $image) {
+                            if (preg_match('/\.(jpg|jpeg|png|gif|webp)$/i', $image)) {
+                                $featuredImage = '<img src="archive/'.$archiveElement.'/'.$image.'" />';
+                                break; // stop searching after finding the first image
+                            }
+                        }
+                    } else {
+                        echo '<p>No images found in '.$archiveElement.'</p>';
+                    }
+                ?>
+                <p class="year"><?php echo $archiveElement; ?></p>
+                <div class="image-wrapper">
+                    <?php echo $featuredImage; ?>
+                </div>
+            </a>
+        <?php } ?>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+        let archiveSlider = new Swiper('.archive-slider', {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+            pauseOnMouseEnter: true,
+            disableOnInteraction: true,
+        },
+    });
+</script>
+
+<!-- 
 <section class="archive">
     <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#archive">Click Archive</button>
     <article id="archive" class="collapse">
@@ -83,4 +126,4 @@
             </li>
         </ul>
     </article>
-</section>
+</section> -->
