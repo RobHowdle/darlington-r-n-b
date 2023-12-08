@@ -3,6 +3,7 @@
 .grid-wrapper {
     display: grid;
     grid-template-columns: 400px auto 400px;
+    padding-inline: 2px;
 }
 
 .grid-wrapper .left-col {
