@@ -1,0 +1,121 @@
+.header {
+	padding-block: 0.5rem 2rem;
+	padding-inline: rem(130);
+
+	.img-wrapper {
+		max-width: 466px;
+		padding-top: 4.5rem;
+
+		&--right img {
+			transform: rotateY(180deg);
+		}
+	}
+
+	.logo {
+		max-width: 240px;
+	}
+
+	.ticket {
+		width: 125px;
+		height: fit-content;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 8rem;
+
+		img {
+			width: 100%;
+		}
+
+		&:hover {
+			.overlay-text {
+				color: $medBlue;
+			}
+		}
+	}
+}
+
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+	.header {
+		padding-inline: rem(80);
+	}
+}
+
+@media only screen and (max-width: 1680px) {
+	.header {
+		padding-inline: rem(40);
+
+		.img-wrapper {
+			max-width: 400px;
+			padding-top: 5.5rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	.header {
+		padding-inline: rem(20);
+
+		.ticket {
+			margin-top: 6.5rem;
+		}
+
+		.img-wrapper {
+			max-width: 350px;
+			padding-top: 4.5rem;
+		}
+
+		.logo {
+			max-width: 200px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.header {
+		.inner-wrapper--1680 {
+			justify-content: space-evenly;
+		}
+
+		.img-wrapper {
+			display: none;
+		}
+
+		.logo {
+			max-width: 150px;
+		}
+
+		.ticket {
+			max-width: 100px;
+			margin-top: 5rem;
+
+			.overlay-text span {
+				font-size: rem(16);
+			}
+		}
+	}
+}
+
+// @media only screen and (max-width: 991px) {
+// 	.header {
+// 		.ticket {
+// 			margin-top: 4rem;
+// 		}
+// 	}
+// }
+
+@media only screen and (max-width: 575px) {
+	.header {
+		padding-inline: rem(10);
+		padding-block: 0.5rem 1rem;
+
+		.ticket {
+			margin-top: 4rem;
+			max-width: 100px;
+		}
+	}
+}
+
+// @media only screen and (max-width: 320px) {
+// }

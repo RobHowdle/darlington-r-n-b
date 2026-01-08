@@ -1,0 +1,9 @@
+[title]Location[/title]
+[text]The Forum Music Centre
+Borough Road
+Darlington
+DL1 1SG[/text]
+[phone]01325363135[/phone]
+[email]https://theforumonline.co.uk/contact-us/[/email]
+[facebook]https://www.facebook.com/theforummusicstudios/[/facebook]
+[instagram]https://www.instagram.com/theforumdarlington/[/instagram]
