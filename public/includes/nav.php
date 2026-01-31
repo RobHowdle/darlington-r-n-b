@@ -11,7 +11,7 @@
             </div>
         </a>
 
-        <a href="/" class="logo">
+        <a href="./" class="logo">
             <img src="media/img/logo.png">
         </a>
 
@@ -29,7 +29,7 @@
 
     <div class="inner-wrapper--1680--mob">
         <div class="upper">
-            <a href="/" class="logo">
+            <a href="./" class="logo">
                 <img src="media/img/logo.png">
             </a>
         </div>
@@ -41,7 +41,7 @@
                 </div>
             </a>
 
-            <a href="archive" class="btn ticket ticket--right">
+            <a href="audio.php" class="btn ticket ticket--right">
                 <img src="media/img/ticket.png">
                 <div class="overlay-text">
                     <span class="button-text">Audio</span>
