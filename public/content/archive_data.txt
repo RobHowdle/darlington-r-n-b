@@ -1,6 +1,9 @@
 [year]1995[/year]
 [description]Marking the first year of Darlington R’n’B Club, some outstanding bands played throughout this year giving a good glimpse at things to come.[/description]
-[bands]8th September: Pete Giligan's Little Criminals, 27th October: Little Stevie & The Rhythm Kinds, 24th November: No Time For Jive, 22nd December: Dave Richmond Band & Hot Licks Cookies[/bands]
+[bands]8th September: Pete Giligan's Little Criminals, 
+27th October: Little Stevie & The Rhythm Kinds, 
+24th November: No Time For Jive, 
+22nd December: Dave Richmond Band & Hot Licks Cookies[/bands]
 
 [year]1996[/year]
 [description]Rythm & Brews Festival Year[/description]
@@ -18,9 +21,9 @@
 28th September: The Mighty Houserockers (Darlington Rhythm & Brews Festival '96) :: Sold Out, 
 11th October: Stalebread Charlie :: Sold Out, 
 25th October: The Moochers, 
-1th November: Out Of The Blue :: Sold Out
+1st November: Out Of The Blue :: Sold Out,
 22nd November: The Backscratchers :: Sold Out,
-6th December: The Denny Newman Band :: Sold Out
+6th December: The Denny Newman Band :: Sold Out,
 20th December: Big Joe Louis & His Blues Kings, Neil Dalton's Blue Ace's :: Sold Out[/bands]
 
 [year]1997[/year]
@@ -49,7 +52,7 @@
 31st October: The Producers :: Sold Out,
 14th November: Alamo Leal & Bluesville :: Sold Out,
 28th November: The Mighty 45's :: Sold Out,
-12th December: Big Joe Louis & His Blues Kings :: Sold Out
+12th December: Big Joe Louis & His Blues Kings :: Sold Out,
 20th December: The Hamsters & George Shovlin Band :: Sold Out
 [/bands]
 
@@ -65,7 +68,7 @@
 11th April: Paul Lamb & The Kingsnakes, Ray Stubbs One-Man Band :: Sold Out, 
 24th April: The Denny Newman Band, 
 8th May: The Eddie Martin Band, 
-22th May: The Frank White Band :: Sold Out, 
+22nd May: The Frank White Band :: Sold Out, 
 30th May: Otis Grand Big Blues Band :: Sold Out, 
 12th June: Saints or Sinners, 
 26th June: Steve Williams Blues Deluxe, 
@@ -81,7 +84,7 @@
 17th October: Eugene ‘Hideaway’ Bridges & Preacher, 
 30th October: Out Of The Blue,
 6th November: ‘Big Man’ Clayton & The 44’s :: Sold Out, 
-27 November: Gwyn Ashton Band :: Sold Out, 
+27th November: Gwyn Ashton Band :: Sold Out, 
 11th December: Steve Bennett’s Bluesbusters :: Sold Out, 
 19th December: The Hoax & Pete Gilgan Band :: Sold Out
 [/bands]
@@ -111,11 +114,11 @@
 30th July: Neil Dalton’s Blue Aces, 
 3rd September: Eddie Martin Band :: Sold Out, 
 16th September: Martin Fletchers Usual Suspects [Darlington Rhythm & Brews Festival '99], 
-17th September: The Mick Pini Band Darlington Rhythm & Brews Festival '99], 
+17th September: The Mick Pini Band [Darlington Rhythm & Brews Festival '99], 
 18th September: Jet Martin [Darlington Rhythm & Brews Festival '99], 
 18th September: The Nightporters [Darlington Rhythm & Brews Festival '99] :: Sold Out, 
 24th September: Pete Gilgan Band, 
-08 October: The Producers, 
+8th October: The Producers, 
 16th October: Paul Lamb & The Kingsnakes :: Sold Out, 
 22nd October: The Harpbreakers, 
 5th November: The Nimmo Brothers :: Sold Out, 
@@ -127,11 +130,35 @@
 
 [year]2000[/year]
 [description][/description]
-[bands]14th January: The Dana Dixon Band :: Sold Out, 28th January: Errol Linton & His Blues Vibe :: Sold Out, 11th February~: East Side Torpedoes, Off The Wall (Winter Blues Weekend) :: Sold Out, 12th February: Eugene ‘Hideaway’ Bridges, Colin John Band, Jet Martin (Winter Blues Weekend) :: Sold Out, 25th February: Marcus Malone :: Sold Out, 10th March: Simon ‘Honeyboy’ Hickling :: Sold Out, 24th March: Little Stevie & The Rhythm Kings :: Sold Out, 7th April: ‘Big Man’ Clayton & The 44’s :: Sold Out, 22nd April: Nicky Moore’s Blues Corporation & Citizen Kane :: Sold Out, 5th May: Gwyn Ashton Band :: Sold Out, 19th May: Blues and Trouble :: Sold Out, 2nd June: Big Joe Louis & His Blues Kings :: Sold Out, 16th June: Erik and The Vikings :: Sold Out, 24th June: Pete Gilgan Band (Darlington Communtiy Carnival), 30th June: Stalebread Charlie :: Sold Out, 15 July: The Rhythm Method :: Sold Out, 28th July: Dave Richmond Band :: Sold Out, 1st September: The Motel Kings :: Sold Out, 15th September: The Junco Partners (Darlington Rhythm & Brews Festival '00) :: Sold Out, 16th September: The Nimmo Brothers (Darlington Rhythm & Brews Festival '00) :: Sold Out, 22nd September: The Mick Pini Band, 28th October: Marcus Malone & The Mighty House Rockers, 3rd November: Out of the Blue :: Sold Out, 12th November: West Weston’s Bluesonics :: Sold Out, 1st December: Neol Davis’ Box of Blues :: Sold Out, 16th December: Nine Below Zero & Blue Shoulders :: Sold Out[/bands]
+[bands]14th January: The Dana Dixon Band :: Sold Out, 
+28th January: Errol Linton & His Blues Vibe :: Sold Out, 
+11th February: East Side Torpedoes, Off The Wall (Winter Blues Weekend) :: Sold Out, 
+12th February: Eugene ‘Hideaway’ Bridges, Colin John Band, Jet Martin (Winter Blues Weekend) :: Sold Out, 
+25th February: Marcus Malone :: Sold Out, 10th March: Simon ‘Honeyboy’ Hickling :: Sold Out, 
+24th March: Little Stevie & The Rhythm Kings :: Sold Out, 
+7th April: ‘Big Man’ Clayton & The 44’s :: Sold Out, 
+22nd April: Nicky Moore’s Blues Corporation & Citizen Kane :: Sold Out, 
+5th May: Gwyn Ashton Band :: Sold Out, 
+19th May: Blues and Trouble :: Sold Out, 
+2nd June: Big Joe Louis & His Blues Kings :: Sold Out, 
+16th June: Erik and The Vikings :: Sold Out, 
+24th June: Pete Gilgan Band (Darlington Communtiy Carnival), 
+30th June: Stalebread Charlie :: Sold Out, 
+15th July: The Rhythm Method :: Sold Out, 
+28th July: Dave Richmond Band :: Sold Out, 
+1st September: The Motel Kings :: Sold Out, 
+15th September: The Junco Partners (Darlington Rhythm & Brews Festival '00) :: Sold Out, 
+16th September: The Nimmo Brothers (Darlington Rhythm & Brews Festival '00) :: Sold Out, 
+22nd September: The Mick Pini Band, 
+28th October: Marcus Malone & The Mighty House Rockers, 
+3rd November: Out of the Blue :: Sold Out, 
+12th November: West Weston’s Bluesonics :: Sold Out, 
+1st December: Neol Davis’ Box of Blues :: Sold Out, 
+16th December: Nine Below Zero & Blue Shoulders :: Sold Out[/bands]
 
 [year]2001[/year]
 [description][/description]
-[bands]12th January: Nicky Moore’s Blue Corporation :: Sold Out,  26th January: Bluesline :: Sold Out,  9th February: Errol Linton’s Blues Vibe :: Sold Out,  23rd February: Stan Webb’s Chicken Shack. & Outside In :: Sold Out,  9th March: Alive and Kicking :: Sold Out,  31st March: Mo Indigo :: Sold Out,  6th April: Parkers Alibi :: Sold Out,  20th April: Mike Sanchez Band with George Shovlin :: Sold Out,  4th May: The Producers,  18th May: Big Town Playboys with No Time For Jive (Darlington Blues of May Weekend),  19th May: Paul Lamb and the Kingsnakes with Alamo Leal Blues Band and the Hokum Hotshots (Darlington Blues of May Weekend),  1st June: The D7s :: Sold Out,  15th June: Byther Smith and the Night Riders :: Sold Out,  29th June: The Junco Partners :: Sold Out,  13th July: Eddie Martin Band :: Sold Out,  27th July: Lightning Red and Thunder Blues :: Sold Out,  10th August: Off the Wall :: Sold Out,  31th August: Aynsley Lister Band :: Sold Out,  13th September: Citizen Kane (Darlington Rhythm & Brews Festival '01) :: Sold Out,  14th September: Amor (Darlington Rhythm & Brews Festival '01) :: Sold Out,  15th September: Blues 'n' Trouble (Darlington Rhythm & Brews Festival '01) :: Sold Out,  19th October: Bill Thomas Band :: Sold Out,  2nd November: Richie Milton & The Lowdown :: Sold Out,  16th November: R. J. Mischo with B.B & the Blue Shacks,  30th November: Colin John Band :: Sold Out,  15th December: Nicky Moore's Blues Corporation (with support) The Rhythm Method :: Sold Out[/bands]
+[bands]12th January: Nicky Moore’s Blue Corporation :: Sold Out,  26th January: Bluesline :: Sold Out,  9th February: Errol Linton’s Blues Vibe :: Sold Out,  23rd February: Stan Webb’s Chicken Shack. & Outside In :: Sold Out,  9th March: Alive and Kicking :: Sold Out,  31st March: Mo Indigo :: Sold Out,  6th April: Parkers Alibi :: Sold Out,  20th April: Mike Sanchez Band with George Shovlin :: Sold Out,  4th May: The Producers,  18th May: Big Town Playboys with No Time For Jive (Darlington Blues of May Weekend),  19th May: Paul Lamb and the Kingsnakes with Alamo Leal Blues Band and the Hokum Hotshots (Darlington Blues of May Weekend),  1st June: The D7s :: Sold Out,  15th June: Byther Smith and the Night Riders :: Sold Out,  29th June: The Junco Partners :: Sold Out,  13th July: Eddie Martin Band :: Sold Out,  27th July: Lightning Red and Thunder Blues :: Sold Out,  10th August: Off the Wall :: Sold Out,  31st August: Aynsley Lister Band :: Sold Out,  13th September: Citizen Kane (Darlington Rhythm & Brews Festival '01) :: Sold Out,  14th September: Amor (Darlington Rhythm & Brews Festival '01) :: Sold Out,  15th September: Blues 'n' Trouble (Darlington Rhythm & Brews Festival '01) :: Sold Out,  19th October: Bill Thomas Band :: Sold Out,  2nd November: Richie Milton & The Lowdown :: Sold Out,  16th November: R. J. Mischo with B.B & the Blue Shacks,  30th November: Colin John Band :: Sold Out,  15th December: Nicky Moore's Blues Corporation (with support) The Rhythm Method :: Sold Out[/bands]
 
 [year]2002[/year]
 [description][/description]
@@ -151,7 +178,7 @@
 
 [year]2006[/year]
 [description][/description]
-[bands]6th January: The Giantkillers :: Sold Out, 20th January: The Revolutionaires :: Sold Out, 3rd February: The Speakeasy Blues Band :: Sold Out, 17th February: Stan Webb's Chicken Shack + Off The Wall :: Sold Out, 3rd March: Ian Siegal Band :: Sold Out, 17th March: Doug Jay & The Bluejays :: Sold Out, 31st March: Nicky Moore's Blues Corporation :: Sold Out, 7th April: Mick Clarke Band, 21st April: Steve Arvey & BluesMove :: Sold Out, 19th May: Rocky Athas Group, 2nd June: Hucklebuck, 16th June: Dr Brown & The Groovecats, 24th June: DVD (Darlington Communtiy Carnival), 30th June: Johnny Whitehill Band, 14th July: The Animals + Sam Hird, 28th July: Hamilton Loomis :: Sold Out, 18th August: Papa George Band :: Sold Out, 1st September: Lightnin' Willie & The Poorboys :: Sold Out, 14 September: Rivers (Darlington Rhythm & Brews Festival '06), 15th September: Smokehouse Blues (Darlington Rhythm & Brews Festival '06) :: Sold Out, 16th September: Sean Webster Band (Darlington Rhythm & Brews Festival '06) :: Sold Out, 29th September: Anna Popovic :: Sold Out, 13th October: Nimmo Brothers :: Sold Out, 27th October: Vargas Blues Band, 10th November: Out of the Blue :: Sold Out, 24th November: Lyndon Anderson Band, 8th December: Aynsley Lister Band :: Sold Out, 16th December: Nicky Moores Blues Corporation + The Scandalous Bachelors :: Sold Out[/bands]
+[bands]6th January: The Giantkillers :: Sold Out, 20th January: The Revolutionaires :: Sold Out, 3rd February: The Speakeasy Blues Band :: Sold Out, 17th February: Stan Webb's Chicken Shack + Off The Wall :: Sold Out, 3rd March: Ian Siegal Band :: Sold Out, 17th March: Doug Jay & The Bluejays :: Sold Out, 31st March: Nicky Moore's Blues Corporation :: Sold Out, 7th April: Mick Clarke Band, 21st April: Steve Arvey & BluesMove :: Sold Out, 19th May: Rocky Athas Group, 2nd June: Hucklebuck, 16th June: Dr Brown & The Groovecats, 24th June: DVD (Darlington Communtiy Carnival), 30th June: Johnny Whitehill Band, 14th July: The Animals + Sam Hird, 28th July: Hamilton Loomis :: Sold Out, 18th August: Papa George Band :: Sold Out, 1st September: Lightnin' Willie & The Poorboys :: Sold Out, 14th September: Rivers (Darlington Rhythm & Brews Festival '06), 15th September: Smokehouse Blues (Darlington Rhythm & Brews Festival '06) :: Sold Out, 16th September: Sean Webster Band (Darlington Rhythm & Brews Festival '06) :: Sold Out, 29th September: Anna Popovic :: Sold Out, 13th October: Nimmo Brothers :: Sold Out, 27th October: Vargas Blues Band, 10th November: Out of the Blue :: Sold Out, 24th November: Lyndon Anderson Band, 8th December: Aynsley Lister Band :: Sold Out, 16th December: Nicky Moores Blues Corporation + The Scandalous Bachelors :: Sold Out[/bands]
 
 [year]2007[/year]
 [description][/description]
