@@ -258,4 +258,4 @@
 
 [year]2026[/year]
 [description][/description]
-[bands][/bands]
+[bands]Friday 9th January - The Mitch Laddie Band[/bands]
