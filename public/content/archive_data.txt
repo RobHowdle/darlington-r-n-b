@@ -254,7 +254,7 @@
 
 [year]2025[/year]
 [description][/description]
-[bands]Friday 10th January: MICK McCONNEL & BLUE THUNDER, Friday 14th February: LONG ROAD HOME, Friday 14th March: MILK MEN + DIRT ROAD BAND, Friday 11th April: MESSENGERS OF THE BLUE, Friday 9th May: THE CADILLAC KINGS, Friday 13th June: MISSISSIPPI McDONALD BAND, Friday 11th July: JIMMY REGAL & THE ROYALS, Friday 8th August: BEX MARSHALL[/bands]
+[bands]Friday 10th January: MICK McCONNEL & BLUE THUNDER, Friday 14th February: LONG ROAD HOME, Friday 14th March: MILK MEN + DIRT ROAD BAND, Friday 11th April: MESSENGERS OF THE BLUE, Friday 9th May: THE CADILLAC KINGS, Friday 13th June: MISSISSIPPI McDONALD BAND, Friday 11th July: JIMMY REGAL & THE ROYALS, Friday 8th August: BEX MARSHALL, Friday 12th September: JAMES O'HARA BAND, Friday 10th October: THE BLUE BISHOPS, Friday 14th November: XANDER & THE PEACE PIRATES :: SOLD OUT, Friday 12th December: AYNSLEY LISTER BAND :: SOLD OUT [/bands]
 
 [year]2026[/year]
 [description][/description]
