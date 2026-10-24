@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<?php include 'header.php'; ?>
+<?php
 
-<body>
-    <?php include 'includes/nav.php'; ?>
+use Illuminate\Foundation\Application;
+use Illuminate\Http\Request;
 
-    <?php include 'includes/home_content.php'; ?>
+define('LARAVEL_START', microtime(true));
 
-    <?php include 'footer.php'; ?>
-</body>
+// Determine if the application is in maintenance mode...
+if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
+    require $maintenance;
+}
 
-</html>
+// Register the Composer autoloader...
+require __DIR__.'/../vendor/autoload.php';
+
+// Bootstrap Laravel and handle the request...
+/** @var Application $app */
+$app = require_once __DIR__.'/../bootstrap/app.php';
+
+$app->handleRequest(Request::capture());
