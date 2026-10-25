@@ -4107,16 +4107,16 @@
         },
         {
             "name": "robhowdle/howdle-cms",
-            "version": "v1.0.0",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:RobHowdle/howdle-cms.git",
-                "reference": "2e5966b6759ab3ad2a3a62fb9de538c9870228af"
+                "reference": "6dac41727d93fbabea0e0d7c59ce4470caec7a46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobHowdle/howdle-cms/zipball/2e5966b6759ab3ad2a3a62fb9de538c9870228af",
-                "reference": "2e5966b6759ab3ad2a3a62fb9de538c9870228af",
+                "url": "https://api.github.com/repos/RobHowdle/howdle-cms/zipball/6dac41727d93fbabea0e0d7c59ce4470caec7a46",
+                "reference": "6dac41727d93fbabea0e0d7c59ce4470caec7a46",
                 "shasum": ""
             },
             "require": {
@@ -4150,10 +4150,10 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/RobHowdle/howdle-cms/tree/v1.0.0",
+                "source": "https://github.com/RobHowdle/howdle-cms/tree/v1.0.4",
                 "issues": "https://github.com/RobHowdle/howdle-cms/issues"
             },
-            "time": "2026-10-24T13:34:16+00:00"
+            "time": "2026-10-25T22:48:43+00:00"
         },
         {
             "name": "spomky-labs/cbor-php",

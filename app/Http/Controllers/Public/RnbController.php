@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Public;
 
 use App\Http\Controllers\Controller;
+use App\Models\RnbAudioTrack;
 use Howdle\Cms\Models\Page;
 use Howdle\Cms\Models\Post;
 use Illuminate\Contracts\View\View;
@@ -25,6 +26,25 @@ class RnbController extends Controller
             'archivePosts' => Post::query()
                 ->whereHas('blogType', fn ($query) => $query->where('slug', 'archive'))
                 ->published()->orderBy('title')->get(),
+        ]);
+    }
+
+    public function audio(): View
+    {
+        return view('rnb.audio', [
+            'tracks' => RnbAudioTrack::query()
+                ->where('is_published', true)
+                ->orderBy('sort_order')
+                ->orderBy('id')
+                ->get()
+                ->map(fn (RnbAudioTrack $track): array => [
+                    'id' => $track->id,
+                    'title' => $track->title,
+                    'artist' => $track->artist,
+                    'audioUrl' => $track->audio_url,
+                    'coverUrl' => $track->cover_url,
+                    'coverAlt' => $track->cover_alt ?: $track->title.' by '.$track->artist,
+                ]),
         ]);
     }
 

@@ -1,12 +1,13 @@
 <?php
 
 use App\Http\Controllers\Public\PageController;
+use App\Http\Controllers\Public\RnbController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [\App\Http\Controllers\Public\RnbController::class, 'home'])->name('home');
-Route::get('/history', [\App\Http\Controllers\Public\RnbController::class, 'history'])->name('rnb.history');
-Route::get('/archive', [\App\Http\Controllers\Public\RnbController::class, 'archive'])->name('rnb.archive');
-Route::view('/audio', 'rnb.audio')->name('rnb.audio');
+Route::get('/', [RnbController::class, 'home'])->name('home');
+Route::get('/history', [RnbController::class, 'history'])->name('rnb.history');
+Route::get('/archive', [RnbController::class, 'archive'])->name('rnb.archive');
+Route::get('/audio', [RnbController::class, 'audio'])->name('rnb.audio');
 
 Route::redirect('/history.php', '/history', 301);
 Route::redirect('/archive.php', '/archive', 301);
