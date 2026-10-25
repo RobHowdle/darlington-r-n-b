@@ -1988,3 +1988,14 @@ a {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* Keep the site footer at the viewport bottom on short pages. */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body > footer {
+  margin-top: auto;
+}
