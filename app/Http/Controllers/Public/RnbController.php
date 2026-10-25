@@ -1,12 +1,12 @@
 <?php
 
-namespace App\\Http\\Controllers\\Public;
+namespace App\Http\Controllers\Public;
 
-use App\\Http\\Controllers\\Controller;
-use App\\Models\\RnbAudioTrack;
-use Howdle\\Cms\\Models\\Page;
-use Howdle\\Cms\\Models\\Post;
-use Illuminate\\Contracts\\View\\View;
+use App\Http\Controllers\Controller;
+use App\Models\RnbAudioTrack;
+use Howdle\Cms\Models\Page;
+use Howdle\Cms\Models\Post;
+use Illuminate\Contracts\View\View;
 
 class RnbController extends Controller
 {
@@ -56,7 +56,7 @@ class RnbController extends Controller
             default => abort(404),
         };
 
-        $settings = \\App\\Models\\ClubSettings::current();
+        $settings = \App\Models\ClubSettings::current();
 
         return view($template, [
             'cmsPage' => $page, 'preview' => $preview,
