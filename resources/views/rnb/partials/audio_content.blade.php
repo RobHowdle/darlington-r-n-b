@@ -1,35 +1,51 @@
 <style>
-    /* Keep this page-specific carousel aligned with the original artwork-first layout. */
+    .audio-track-carousel {
+        grid-column: 2 / 3;
+        min-width: 0;
+    }
+
+    .audio-track-slider {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .audio-track-slider .swiper-wrapper {
+        align-items: flex-start;
+    }
+
     .audio-track-slider .swiper-slide {
-        max-width: none;
         width: auto;
+        height: auto !important;
+        max-width: none;
         align-content: start;
     }
 
     .audio-track-slider .swiper-slide > img {
         display: block;
         width: 100%;
-        max-width: none;
-        max-height: none;
+        max-width: 400px;
+        max-height: 400px;
+        height: auto;
         aspect-ratio: 1 / 1;
         object-fit: cover;
+        margin-inline: auto;
     }
 
     .audio-track-slider .swiper-slide > .text-center {
         padding: 0.75rem 0.25rem 0;
     }
 
-    .audio-track-slider .slider-buttons-wrapper {
+    .audio-track-carousel > .slider-buttons-wrapper {
         position: relative;
         display: flex;
         align-items: center;
         gap: 1rem;
         height: 35px;
-        margin-top: 0.25rem;
+        margin-top: 0.5rem;
     }
 
-    .audio-track-slider .slider-buttons-wrapper .swiper-button-prev,
-    .audio-track-slider .slider-buttons-wrapper .swiper-button-next {
+    .audio-track-carousel > .slider-buttons-wrapper .swiper-button-prev,
+    .audio-track-carousel > .slider-buttons-wrapper .swiper-button-next {
         position: static !important;
         inset: auto;
         flex: 0 0 35px;
@@ -37,6 +53,13 @@
         height: 35px;
         margin: 0;
         transform: none;
+    }
+
+    @media only screen and (max-width: 1366px) {
+        .audio-track-carousel {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
     }
 </style>
 
@@ -65,7 +88,8 @@
                         </div>
                     </div>
 
-                    <div class="slider swiper audio-track-slider" style="margin-left:0!important;margin-right:0!important;">
+                    <div class="audio-track-carousel">
+                    <div class="slider swiper audio-track-slider">
                         <div class="swiper-wrapper">
                             @forelse ($tracks as $index => $track)
                                 <div class="swiper-slide" data-track-index="{{ $index }}" data-track-id="{{ $track['id'] }}">
@@ -81,12 +105,13 @@
                                 </div>
                             @endforelse
                         </div>
-                        @if ($tracks->isNotEmpty())
-                            <div class="slider-buttons-wrapper">
-                                <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
-                                <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
-                            </div>
-                        @endif
+                    </div>
+                    @if ($tracks->isNotEmpty())
+                        <div class="slider-buttons-wrapper">
+                            <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                            <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                    @endif
                     </div>
                 </div>
             </div>
