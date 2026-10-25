@@ -1,3 +1,45 @@
+<style>
+    /* Keep this page-specific carousel aligned with the original artwork-first layout. */
+    .audio-track-slider .swiper-slide {
+        max-width: none;
+        width: auto;
+        align-content: start;
+    }
+
+    .audio-track-slider .swiper-slide > img {
+        display: block;
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .audio-track-slider .swiper-slide > .text-center {
+        padding: 0.75rem 0.25rem 0;
+    }
+
+    .audio-track-slider .slider-buttons-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        height: 35px;
+        margin-top: 0.25rem;
+    }
+
+    .audio-track-slider .slider-buttons-wrapper .swiper-button-prev,
+    .audio-track-slider .slider-buttons-wrapper .swiper-button-next {
+        position: static !important;
+        inset: auto;
+        flex: 0 0 35px;
+        width: 35px;
+        height: 35px;
+        margin: 0;
+        transform: none;
+    }
+</style>
+
 <section class="home-grid-section">
     <div class="res--140">
         <div class="inner-wrapper--1680">
@@ -73,10 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const slider = window.Swiper ? new Swiper('.audio-track-slider', {
-        slidesPerView: 1,
+        slidesPerView: 1.5,
         spaceBetween: 30,
         loop: playlist.length > 1,
-        breakpoints: {576: {slidesPerView: 2}},
         navigation: {nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev'},
     }) : null;
 
