@@ -50,8 +50,12 @@ class ImportLegacyRnbAudio extends Command
 
             $audioPath = 'rnb-audio/tracks/'.basename($audioFile);
             $coverPath = 'rnb-audio/covers/'.basename($coverFile);
-            Storage::disk('public')->put($audioPath, fopen($audioSource, 'r'));
-            Storage::disk('public')->put($coverPath, fopen($coverSource, 'r'));
+            if (! $this->copyLegacyFile($audioSource, $audioPath)
+                || ! $this->copyLegacyFile($coverSource, $coverPath)) {
+                Storage::disk('public')->delete([$audioPath, $coverPath]);
+                $this->warn("Skipped {$title}: could not copy its audio or cover file.");
+                continue;
+            }
 
             RnbAudioTrack::query()->create([
                 'title' => $title,
@@ -69,5 +73,19 @@ class ImportLegacyRnbAudio extends Command
         $this->info("Imported {$imported} track(s).");
 
         return self::SUCCESS;
+    }
+
+    private function copyLegacyFile(string $source, string $destination): bool
+    {
+        $stream = fopen($source, 'r');
+        if ($stream === false) {
+            return false;
+        }
+
+        try {
+            return Storage::disk('public')->put($destination, $stream);
+        } finally {
+            fclose($stream);
+        }
     }
 }
