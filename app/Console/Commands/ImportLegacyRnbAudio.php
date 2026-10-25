@@ -1,10 +1,10 @@
 <?php
 
-namespace App\\Console\\Commands;
+namespace App\Console\Commands;
 
-use App\\Models\\RnbAudioTrack;
-use Illuminate\\Console\\Command;
-use Illuminate\\Support\\Facades\\Storage;
+use App\Models\RnbAudioTrack;
+use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Storage;
 
 class ImportLegacyRnbAudio extends Command
 {
