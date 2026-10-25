@@ -1,16 +1,16 @@
 <?php
 
-namespace App\\Http\\Controllers\\Admin;
+namespace App\Http\Controllers\Admin;
 
-use App\\Http\\Controllers\\Controller;
-use App\\Models\\RnbAudioTrack;
-use Howdle\\Cms\\Models\\SiteSetting;
-use Illuminate\\Http\\RedirectResponse;
-use Illuminate\\Http\\Request;
-use Illuminate\\Support\\Facades\\Gate;
-use Illuminate\\Support\\Facades\\Storage;
-use Illuminate\\Validation\\Rule;
-use Illuminate\\View\\View;
+use App\Http\Controllers\Controller;
+use App\Models\RnbAudioTrack;
+use Howdle\Cms\Models\SiteSetting;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rule;
+use Illuminate\View\View;
 
 class RnbAudioTrackController extends Controller
 {
