@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Public;
+namespace App\\Http\\Controllers\\Public;
 
-use App\Http\Controllers\Controller;
-use Howdle\Cms\Models\Page;
-use Howdle\Cms\Models\Post;
-use Illuminate\Contracts\View\View;
+use App\\Http\\Controllers\\Controller;
+use App\\Models\\RnbAudioTrack;
+use Howdle\\Cms\\Models\\Page;
+use Howdle\\Cms\\Models\\Post;
+use Illuminate\\Contracts\\View\\View;
 
 class RnbController extends Controller
 {
@@ -28,6 +29,25 @@ class RnbController extends Controller
         ]);
     }
 
+    public function audio(): View
+    {
+        return view('rnb.audio', [
+            'tracks' => RnbAudioTrack::query()
+                ->where('is_published', true)
+                ->orderBy('sort_order')
+                ->orderBy('id')
+                ->get()
+                ->map(fn (RnbAudioTrack $track): array => [
+                    'id' => $track->id,
+                    'title' => $track->title,
+                    'artist' => $track->artist,
+                    'audioUrl' => $track->audio_url,
+                    'coverUrl' => $track->cover_url,
+                    'coverAlt' => $track->cover_alt ?: $track->title.' by '.$track->artist,
+                ]),
+        ]);
+    }
+
     public function render(Page $page, bool $preview = false): View
     {
         $template = match ($page->getAttribute('site_key')) {
@@ -36,7 +56,7 @@ class RnbController extends Controller
             default => abort(404),
         };
 
-        $settings = \App\Models\ClubSettings::current();
+        $settings = \\App\\Models\\ClubSettings::current();
 
         return view($template, [
             'cmsPage' => $page, 'preview' => $preview,
