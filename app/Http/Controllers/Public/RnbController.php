@@ -3,7 +3,8 @@
 namespace App\Http\Controllers\Public;
 
 use App\Http\Controllers\Controller;
-use App\Models\Page;
+use Howdle\Cms\Models\Page;
+use Howdle\Cms\Models\Post;
 use Illuminate\Contracts\View\View;
 
 class RnbController extends Controller
@@ -21,8 +22,9 @@ class RnbController extends Controller
     public function archive(): View
     {
         return view('rnb.archive', [
-            'archiveYears' => \App\Models\ArchiveYear::query()
-                ->where('is_published', true)->orderBy('year')->get(),
+            'archivePosts' => Post::query()
+                ->whereHas('blogType', fn ($query) => $query->where('slug', 'archive'))
+                ->published()->orderBy('title')->get(),
         ]);
     }
 

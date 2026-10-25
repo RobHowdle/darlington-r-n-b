@@ -4,26 +4,19 @@
         <p class="text-center">Travel back through the years with our gig archive showcasing all the bands that have played at our events over the years.</p>
         <div class="tab-container mt-2">
             <div class="tablink-wrapper">
-                @foreach ($archiveYears as $archiveYear)
+                @foreach ($archivePosts as $archivePost)
                     <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'Tab{{ $archiveYear->year }}')">{{ $archiveYear->year }}</button>
+                        <button class="tablinks" onclick="openTab(event, 'Tab{{ $archivePost->slug }}')">{{ $archivePost->title }}</button>
                     </div>
                 @endforeach
             </div>
-            @foreach ($archiveYears as $archiveYear)
-                <div id="Tab{{ $archiveYear->year }}" class="tabcontent" style="display: none;">
-                    <h3 class="h1">{{ $archiveYear->year }}</h3>
-                    @if (!empty($archiveYear->description))
-                        <p class="h6 my-2">{!! nl2br(e($archiveYear->description)) !!}</p>
+            @foreach ($archivePosts as $archivePost)
+                <div id="Tab{{ $archivePost->slug }}" class="tabcontent" style="display: none;">
+                    <h3 class="h1">{{ $archivePost->title }}</h3>
+                    @if (!empty($archivePost->excerpt))
+                        <p class="h6 my-2">{!! nl2br(e($archivePost->excerpt)) !!}</p>
                     @endif
-                    @if (!empty($archiveYear->bands))
-                        <p class="h2"><strong>Bands:</strong></p>
-                        <ul>
-                            @foreach ($archiveYear->bands as $band)
-                                <li>{{ $band }}</li>
-                            @endforeach
-                        </ul>
-                    @endif
+                    {!! $archivePost->body !!}
                 </div>
             @endforeach
         </div>

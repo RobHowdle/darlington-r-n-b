@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Admin;
 
-use App\Models\Page;
+use Howdle\Cms\Models\SiteSetting;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Gate;
 
@@ -10,7 +10,7 @@ class SaveClubSettingsRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        return Gate::allows('viewAny', Page::class);
+        return Gate::allows('viewAny', SiteSetting::class);
     }
 
     public function rules(): array

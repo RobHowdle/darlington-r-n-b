@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Page;
+use Howdle\Cms\Models\Page;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use RuntimeException;

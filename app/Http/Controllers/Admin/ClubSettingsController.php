@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\SaveClubSettingsRequest;
 use App\Models\ClubSettings;
-use App\Models\Page;
+use Howdle\Cms\Models\SiteSetting;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Gate;
 use Inertia\Inertia;
@@ -15,7 +15,7 @@ class ClubSettingsController extends Controller
 {
     public function edit(): Response
     {
-        Gate::authorize('viewAny', Page::class);
+        Gate::authorize('viewAny', SiteSetting::class);
 
         return Inertia::render('admin/club/Edit', ['settings' => ClubSettings::current()]);
     }

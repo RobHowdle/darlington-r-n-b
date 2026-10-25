@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Admin;
 
 use App\Models\ArchiveYear;
-use App\Models\Page;
+use Howdle\Cms\Models\Page;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Validation\Rule;

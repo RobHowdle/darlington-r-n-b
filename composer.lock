@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "167d7f827bc63c3a79eaeb65e9aaed87",
+    "content-hash": "6cc649713140030b8489ab795b720a31",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -4104,6 +4104,56 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.4"
             },
             "time": "2026-09-16T11:39:30+00:00"
+        },
+        {
+            "name": "robhowdle/howdle-cms",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:RobHowdle/howdle-cms.git",
+                "reference": "2e5966b6759ab3ad2a3a62fb9de538c9870228af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobHowdle/howdle-cms/zipball/2e5966b6759ab3ad2a3a62fb9de538c9870228af",
+                "reference": "2e5966b6759ab3ad2a3a62fb9de538c9870228af",
+                "shasum": ""
+            },
+            "require": {
+                "inertiajs/inertia-laravel": "^3.0",
+                "laravel/framework": "^13.17",
+                "php": "^8.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Howdle\\Cms\\Providers\\HowdleCmsServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Howdle\\Cms\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "A reusable Laravel CMS with a ready-to-use /admin panel.",
+            "keywords": [
+                "cms",
+                "howdle",
+                "laravel"
+            ],
+            "support": {
+                "source": "https://github.com/RobHowdle/howdle-cms/tree/v1.0.0",
+                "issues": "https://github.com/RobHowdle/howdle-cms/issues"
+            },
+            "time": "2026-10-24T13:34:16+00:00"
         },
         {
             "name": "spomky-labs/cbor-php",
