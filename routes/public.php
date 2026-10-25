@@ -1,8 +1,8 @@
 <?php
 
-use App\\Http\\Controllers\\Public\\PageController;
-use App\\Http\\Controllers\\Public\\RnbController;
-use Illuminate\\Support\\Facades\\Route;
+use App\Http\Controllers\Public\PageController;
+use App\Http\Controllers\Public\RnbController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', [RnbController::class, 'home'])->name('home');
 Route::get('/history', [RnbController::class, 'history'])->name('rnb.history');
