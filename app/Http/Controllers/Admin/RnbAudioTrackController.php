@@ -55,20 +55,20 @@ class RnbAudioTrackController extends Controller
         $this->authorizeCmsSettings();
         $data = $this->validated($request, false);
 
+        $oldFiles = [];
         if ($request->hasFile('audio')) {
-            $oldAudio = $audioTrack->audio_path;
+            $oldFiles[] = $audioTrack->audio_path;
             $data['audio_path'] = $request->file('audio')->store('rnb-audio/tracks', 'public');
-            Storage::disk('public')->delete($oldAudio);
         }
 
         if ($request->hasFile('cover')) {
-            $oldCover = $audioTrack->cover_path;
+            $oldFiles[] = $audioTrack->cover_path;
             $data['cover_path'] = $request->file('cover')->store('rnb-audio/covers', 'public');
-            Storage::disk('public')->delete($oldCover);
         }
 
         unset($data['audio'], $data['cover']);
         $audioTrack->update($data);
+        Storage::disk('public')->delete($oldFiles);
 
         return to_route('admin.rnb-audio.index')->with('status', 'Track updated.');
     }
